@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0DD46DFC21FEBCE10012451F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD46DFB21FEBCE10012451F /* main.m */; };
+		0DD46E0421FEBD0E0012451F /* MicroBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD46E0321FEBD0E0012451F /* MicroBlog.m */; };
+		0DD46E0721FEBD260012451F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD46E0621FEBD260012451F /* User.m */; };
+		0DD46E0A21FEBD300012451F /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD46E0921FEBD300012451F /* Account.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		0DD46DF821FEBCE10012451F /* Weibo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Weibo; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD46DFB21FEBCE10012451F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0DD46E0221FEBD0E0012451F /* MicroBlog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MicroBlog.h; sourceTree = "<group>"; };
+		0DD46E0321FEBD0E0012451F /* MicroBlog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MicroBlog.m; sourceTree = "<group>"; };
+		0DD46E0521FEBD260012451F /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		0DD46E0621FEBD260012451F /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		0DD46E0821FEBD300012451F /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		0DD46E0921FEBD300012451F /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		0DD46E0B21FEBFB70012451F /* DateFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateFormat.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				0DD46DFB21FEBCE10012451F /* main.m */,
+				0DD46E0221FEBD0E0012451F /* MicroBlog.h */,
+				0DD46E0321FEBD0E0012451F /* MicroBlog.m */,
+				0DD46E0521FEBD260012451F /* User.h */,
+				0DD46E0621FEBD260012451F /* User.m */,
+				0DD46E0821FEBD300012451F /* Account.h */,
+				0DD46E0921FEBD300012451F /* Account.m */,
+				0DD46E0B21FEBFB70012451F /* DateFormat.h */,
 			);
 			path = Weibo;
 			sourceTree = "<group>";
@@ -118,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD46E0421FEBD0E0012451F /* MicroBlog.m in Sources */,
+				0DD46E0A21FEBD300012451F /* Account.m in Sources */,
 				0DD46DFC21FEBCE10012451F /* main.m in Sources */,
+				0DD46E0721FEBD260012451F /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +259,7 @@
 		0DD46E0021FEBCE10012451F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -247,6 +268,7 @@
 		0DD46E0121FEBCE10012451F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
